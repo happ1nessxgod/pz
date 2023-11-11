@@ -28,6 +28,8 @@ int main() {
             while (getchar() != '\n');
         }
     } while (scanf("%d", &A) != 1);
+    
+    while (getchar() != '\n');
 
     printf("Введите значение B: ");
     do
