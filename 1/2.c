@@ -8,29 +8,29 @@ int main()
 
 	int var;
 
-	printf(" 0. Âîńęđĺńĺíüĺ \n 1. Ďîíĺäĺëüíčę \n 2. Âňîđíčę \n 3. Ńđĺäŕ \n 4. ×ĺňâĺđă \n 5. Ď˙ňíčöŕ \n 6. Ńóááîňŕ \n Ââĺäčňĺ öčôđó äí˙ íĺäĺëč: ");
+	printf(" 0. Воскресенье \n 1. Понедельник \n 2. Вторник \n 3. Среда \n 4. Четверг \n 5. Пятница \n 6. Суббота \n Введите цифру дня недели: ");
 	do
 	{
 		scanf("%d", &var);
 	
 		switch (var)
 		{
-		case 0: printf("Âîńęđĺńĺíüĺ");
+		case 0: printf("Воскресенье");
 			break;
-		case 1: printf("Ďîíĺäĺëüíčę");
+		case 1: printf("Понедельник");
 			break;
-		case 2: printf("Âňîđíčę");
+		case 2: printf("Вторник");
 			break;
-		case 3: printf("Ńđĺäŕ");
+		case 3: printf("Среда");
 			break;
-		case 4: printf("×ĺňâĺđă");
+		case 4: printf("Четверг");
 			break;
-		case 5: printf("Ď˙ňíčöŕ");
+		case 5: printf("Пятница");
 			break;
-		case 6: printf("Ńóááîňŕ");
+		case 6: printf("Суббота");
 			break;
 		default:
-			printf("Íĺęîđđĺęňíűé ââîä, ââĺäčňĺ öčôđó îň 0 äî 6: ");
+			printf("Некорректный ввод, введите цифру от 0 до 6: ");
 			break;
 		}
 	}  while (var < 0 || var > 6);
