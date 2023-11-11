@@ -27,7 +27,7 @@ int main() {
             printf("Некорректный ввод, попробуйте еще раз ввести значение А: ");
             while (getchar() != '\n');
         }
-    } while (scanf("%d", &A) == 1);
+    } while (scanf("%d", &A) != 1);
 
     printf("Введите значение B: ");
     do
@@ -41,7 +41,7 @@ int main() {
             printf("Некорректный ввод, попробуйте еще раз ввести значение B: ");
             while (getchar() != '\n');
         }
-    } while (scanf("%d", &B) == 1);
+    } while (scanf("%d", &B) != 1);
 
     r = raznica(A, B);
     t = roznitsya(B, A);
