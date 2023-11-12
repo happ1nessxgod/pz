@@ -13,11 +13,17 @@ int main()
 
 	while (1)
 	{
-		printf("Введите три целых числа через пробел: ");
 		if (scanf("%lli %lli %lli", &A, &B, &C) == 3)
 		{
-			while (getchar() != '\n');
-			break;
+			if (getchar() != '\n')
+			{
+				printf("Некорректный ввод. Введите три целых числа еще раз: ");
+				while (getchar() != '\n');
+			}
+			else
+			{
+				break;
+			}
 		}
 		else
 		{
