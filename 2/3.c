@@ -2,7 +2,7 @@
 
 int main()
 {
-	for (int i = 1, p; i <= 10; ++i)
-		printf("%i ", i * 3);
+	for (int i = 1; i <= 10; ++i)
+		printf("%i\n", i * 3);
 	return 0;
 }
