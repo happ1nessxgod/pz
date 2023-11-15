@@ -36,7 +36,6 @@ int main()
 									printf("\n");
 										for (x = 90; x < 100; ++x)
 											printf("%i ", x);
-										printf("\n");
 	return 0;
 }
 
@@ -121,5 +120,78 @@ int main()
 
 ---------------------------------------------------------------------------------------------------------
 
+#define tttt printf("%c", i);
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	char i = '\n';
+	char o = ' ';
+	int x = -1;
+	printf("%c", o);
+	do
+	{
+		x++;
+		printf(" %i  ", x);
+	} while (x < 9);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 19);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 29);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 39);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 49);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 59);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 69);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 79);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 89);
+	tttt
+	do
+	{
+		x++;
+		printf(" %i ", x);
+	} while (x < 99);
+	return 0;
+}
 
 	
