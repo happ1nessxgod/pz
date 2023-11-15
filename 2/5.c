@@ -39,3 +39,87 @@ int main()
 										printf("\n");
 	return 0;
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+#define tttt printf("%c", i);
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <locale.h>
+
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	char i = '\n';
+	char o = ' ';
+	int x = -1;
+	printf("%c", o);
+	while (x < 9)
+	{
+		x++;
+		printf(" %i  ", x);
+	}
+	tttt
+	while (x < 19)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 29)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 39)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 49)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 59)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 69)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 79)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 89)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+	tttt
+	while (x < 99)
+	{
+		x++;
+		printf(" %i ", x);
+	}
+
+	return 0;
+}
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+	
