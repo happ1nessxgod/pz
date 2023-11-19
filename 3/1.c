@@ -2,10 +2,8 @@
 #include <stdio.h>
 #include <locale.h>
 
-int Prost(int x)
-{
-	if (x > 1)
-	{
+int Prost(int x) {
+	if (x > 0) {
 		for (int i = 2; i < x; i++)
 			if (x % i == 0) {
 				return 0;
