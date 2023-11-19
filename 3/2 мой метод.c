@@ -5,8 +5,16 @@
 
 void NOD(int x, int y)
 {
-	int max = abs(fmax(x, y));
-	int min = abs(fmin(x, y));
+	int min, max;
+	if (x > y) {
+		max = x;
+		min = y;
+	}
+	else
+	{
+		max = y;
+		min = x;
+	}
 
 	if (max % min == 0) {
 		printf("Общий делитель: %i", min);
@@ -17,7 +25,7 @@ void NOD(int x, int y)
 			if (max % i == 0 && min % i == 0) {
 				printf("Общий делитель: %i", i);
 				break;
-		}
+			}
 		printf("Нет делителя");
 	}
 }
