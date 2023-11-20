@@ -1,20 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
-#include <math.h>
 
 void NOD(int x, int y)
 {
 	int min, max;
-	if (x > y) {
-		max = x;
-		min = y;
-	}
-	else
-	{
-		max = y;
-		min = x;
-	}
+	min = x > y ? y : x;
+	max = x > y ? x : y;
 
 	if (max % min == 0) {
 		printf("Общий делитель: %i", min);
