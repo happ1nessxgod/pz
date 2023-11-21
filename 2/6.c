@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    const int size = 10;  // предполагаем, что у вас матрица 10x10 (можете изменить размер по своему усмотрению)
+    const int size = 10; 
     
     for (int i = 0; i < size; ++i) {
         for (int j = 0; j < size; ++j) {
             if (i > j) {
-                printf("%2d ", i * size + j);  // или любой другой способ генерации чисел в пределах 0-99
+                printf("%2d ", i * size + j); 
             } else {
-                printf("   ");  // просто для выравнивания
+                printf("   ");
             }
         }
         printf("\n");
