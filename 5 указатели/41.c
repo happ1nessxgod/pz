@@ -9,7 +9,7 @@ int main() {
         printf("Элемент %d: %f\n", i + 1, *ptr_a);
         ptr_a++;
     }
-    printf("%p %p %p", &ptr_a, array, &array[2]);
+    printf("%p %p %p %p", ptr_a-2, ptr_a, array, &array[0]);
 
     return 0;
 }
