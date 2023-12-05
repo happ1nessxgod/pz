@@ -14,13 +14,10 @@ echo "element - array[$mini]"
 for i in "${!array[@]}"; do
         if (( "${array[i]}" < 0)); then
                 j=$((i + 1))
-                while ((j < ${#array[@]} && {array[j] >= 0)); do 
-                        mu=$((mu + {array[j]))
+                while ((j < ${#array[@]} && array[j] >= 0)); do 
+                        mu=$((mu + array[j]))
                         ((j++))
                 done
         fi
 done 
 echo "summa - $mu"
-
-11.sh: line 17: ((: j < 4 && {array[j]} >= 0: syntax error: operand expected (error token is "{array[j]} >= 0")
-
