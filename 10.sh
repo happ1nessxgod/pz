@@ -21,3 +21,6 @@ for i in "${!array[@]}"; do
         fi
 done 
 echo "summa - $mu"
+
+11.sh: line 17: ((: j < 4 && {array[j]} >= 0: syntax error: operand expected (error token is "{array[j]} >= 0")
+
