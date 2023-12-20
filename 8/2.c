@@ -16,7 +16,7 @@ int main() {
             sr += (float)ap[i][j];
         }
     }
-    sr = round(sr / 9);
+    sr = (sr / 9);
     m = fabs(sr - (float)ap[0][0]);
     for (i = 0; i < 3; ++i) {
         for (j = 0; j < 3; ++j) {
