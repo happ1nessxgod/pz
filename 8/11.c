@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <locale.h>
+
 int countElementsEndingWithA(int arr[], int size, int a) {
     int count = 0;
     for (int i = 0; i < size; ++i) {
         int lastDigit = arr[i] % 10;
-        if (lastDigit == a) {
+        if (lastDigit == a || lastDigit == -a ) {
             count++;
         }
     }
@@ -15,8 +16,8 @@ int main() {
     const int cols = 4;
     const int a = 5;
     int arr[3][4] = {
-        {15, 25, 35, 45},
-        {55, 62, 73, 84},
+        {-15, 25, -35, 45},
+        {55, 62, -75, 84},
         {97, 108, 119, 120}
     };
     for (int i = 0; i < rows; ++i) {
