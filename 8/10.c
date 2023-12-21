@@ -26,13 +26,13 @@ int main() {
         {-9, -10, 11, 12}
     };
     int mincol1, mincol2, minsum;
-    qwe(arr, rows, cols, &mincol1, &mincol2, &minSum);
+    qwe(arr, rows, cols, &mincol1, &mincol2, &minsum);
 
-    minSum = 0;
+    minsum = 0;
     for (int i = 0; i < rows; ++i) {
-        minSum += arr[i][mincol1] + arr[i][mincol2];
+        minsum += arr[i][mincol1] + arr[i][mincol2];
     }
     printf("номера двух соседних столбцов с минимальной суммой элементов: %d и %d\n", mincol1+1, mincol2+1);
-    printf("минимальная сумма элементов: %d\n", minSum);
+    printf("минимальная сумма элементов: %d\n", minsum);
     return 0;
 }
