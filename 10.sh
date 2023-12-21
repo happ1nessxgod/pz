@@ -47,15 +47,12 @@ done
 echo "znachenie - $min"
 echo "element - array[$mini]"
 
-# Проверка первых двух элементов на отрицательность
 if ((array[0] < 0 && array[1] < 0)); then
     mu=0
 else
-    # Поиск первого отрицательного элемента
     for i in "${!array[@]}"; do
         if (( "${array[i]}" < 0)); then
             j=$((i + 1))
-            # Суммирование положительных элементов после второго отрицательного
             while ((j < ${#array[@]} && array[j] >= 0)); do 
                 mu=$((mu + array[j]))
                 ((j++))
